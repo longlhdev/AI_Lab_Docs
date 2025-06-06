@@ -1,0 +1,150 @@
+site_name: AI Lab
+site_url: https://docs.apero.ai
+theme:
+    language: en
+    palette:
+        primary: custom
+    name: material
+    logo: https://apero.vn/wp-content/uploads/2024/10/logo-white.svg
+    favicon: https://apero.vn/wp-content/uploads/2025/02/APERO_Logo-Preview-14.ico
+    features:
+        - navigation.sections
+        - navigation.top
+        - navigation.tabs
+        - content.code.copy
+        - search.highlight
+        - search.suggest
+        - toc.integrate
+        - content.code.annotate
+        - content.tabs.link
+        - navigation.footer
+    font:
+        text: Roboto
+        code: Fira Code
+        font: false
+
+nav:
+    - Home:
+          - About AI Lab: introduction/index.md
+          - Vision & Mission: introduction/vision.md
+
+    - AI as a Service (AIaaS):
+          - Overview & Architecture: aiaas/overview.md
+          - Security:
+                - API Signature: aiaas/security/api-signature.md
+                - Integration: aiaas/security/integration.md
+          - Common:
+                - FAQ: aiaas/faq.md
+          - Art:
+                - Overview: aiaas/art/index.md
+                - v4 (legacy): aiaas/art/v4.md
+                - v5 (stable): aiaas/art/v5.md
+          - Art Premium:
+                - Overview: aiaas/art-premium/index.md
+                - v4 (legacy): aiaas/art-premium/v4.md
+                - v5 (stable): aiaas/art-premium/v5.md
+          - Text to Image:
+                - Overview: aiaas/text-to-image/index.md
+                - v1: aiaas/text-to-image/v1.md
+                - v2: aiaas/text-to-image/v2.md
+          - AI Video:
+                - Overview: aiaas/ai-video/index.md
+                - v1: aiaas/ai-video/v1.md
+                - v2: aiaas/ai-video/v2.md
+          - Beauty:
+                - Overview: aiaas/beauty/index.md
+                - v1: aiaas/beauty/v1.md
+                - v2: aiaas/beauty/v2.md
+          - Makeup:
+                - Overview: aiaas/makeup/index.md
+                - v1: aiaas/makeup/v1.md
+                - v2: aiaas/makeup/v2.md
+          - Enhance:
+                - Overview: aiaas/enhance/index.md
+                - v1: aiaas/enhance/v1.md
+                - v2: aiaas/enhance/v2.md
+          - Restore:
+                - Overview: aiaas/restore/index.md
+                - v1: aiaas/restore/v1.md
+                - v2: aiaas/restore/v2.md
+          - Fitting:
+                - Overview: aiaas/fitting/index.md
+                - v1: aiaas/fitting/v1.md
+                - v2: aiaas/fitting/v2.md
+          - Clothes:
+                - Overview: aiaas/clothes/index.md
+                - v1: aiaas/clothes/v1.md
+                - v2: aiaas/clothes/v2.md
+          - Clothes Changing:
+                - Overview: aiaas/clothes-changing/index.md
+                - v1: aiaas/clothes-changing/v1.md
+                - v2: aiaas/clothes-changing/v2.md
+          - Home Decorator:
+                - Overview: aiaas/home-decorator/index.md
+                - v1: aiaas/home-decorator/v1.md
+                - v2: aiaas/home-decorator/v2.md
+          - Image Combine:
+                - Overview: aiaas/image-combine/index.md
+                - v1: aiaas/image-combine/v1.md
+                - v2: aiaas/image-combine/v2.md
+          - Outpainting:
+                - Overview: aiaas/outpainting/index.md
+                - v1: aiaas/outpainting/v1.md
+                - v2: aiaas/outpainting/v2.md
+          - Inpainting:
+                - Overview: aiaas/inpainting/index.md
+                - v1: aiaas/inpainting/v1.md
+                - v2: aiaas/inpainting/v2.md
+          - Remove Object:
+                - Overview: aiaas/remove-object/index.md
+                - v1: aiaas/remove-object/v1.md
+                - v2: aiaas/remove-object/v2.md
+          - Logo:
+                - Overview: aiaas/logo/index.md
+                - v1: aiaas/logo/v1.md
+                - v2: aiaas/logo/v2.md
+          - Plant Identifier:
+                - Overview: aiaas/plant-identifier/index.md
+                - v1: aiaas/plant-identifier/v1.md
+                - v2: aiaas/plant-identifier/v2.md
+          - Segment:
+                - Overview: aiaas/segment/index.md
+                - v1: aiaas/segment/v1.md
+                - v2: aiaas/segment/v2.md
+          - Palm Scanning:
+                - Overview: aiaas/palm-scanning/index.md
+                - v1: aiaas/palm-scanning/v1.md
+                - v2: aiaas/palm-scanning/v2.md
+
+    - Software as a Service (SaaS):
+          - Identity Provider:
+                - Overview: saas/identity/index.md
+                - Integration: saas/identity/integration.md
+                - API:
+                      - Login: saas/identity/api/login.md
+                      - Register: saas/identity/api/register.md
+                      - Refresh Token: saas/identity/api/refresh.md
+
+          - Billing:
+                - Overview: saas/index.md
+                - Platform Services: saas/platform-services.md
+                - Admin Dashboard: saas/admin-dashboard.md
+                - API Reference: saas/apis.md
+
+    - Support:
+          - API Policy: help/policy.md
+          - Technical Support: help/support.md
+
+plugins:
+    - search
+    - swagger-ui-tag
+
+markdown_extensions:
+    - admonition
+    - codehilite
+    - toc:
+          permalink: true
+    - pymdownx.superfences
+    - pymdownx.tabbed
+    - pymdownx.details
+    - pymdownx.highlight
